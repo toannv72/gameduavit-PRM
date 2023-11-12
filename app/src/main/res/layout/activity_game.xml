@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/moneyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số Tiền: $100,000"
+        android:textSize="18sp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="214dp">
+
+        <SeekBar
+            android:id="@+id/seekBarPet1"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:thumb="@drawable/vit11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seekBarPet2"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:thumb="@drawable/vit22"
+            app:layout_constraintEnd_toEndOf="@+id/seekBarPet1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/seekBarPet1"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarPet1" />
+
+        <SeekBar
+            android:id="@+id/seekBarPet3"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:thumb="@drawable/vit33"
+            app:layout_constraintEnd_toEndOf="@+id/seekBarPet2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/seekBarPet2"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarPet2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintStart_toStartOf="@+id/seekBarPet2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.528"
+            app:srcCompat="@drawable/huychuong" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintStart_toStartOf="@+id/seekBarPet3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.873"
+            app:srcCompat="@drawable/huychuong" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintStart_toStartOf="@+id/seekBarPet3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183"
+            app:srcCompat="@drawable/huychuong" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarPet3">
+
+        <RadioButton
+            android:id="@+id/radioButtonHidden"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonPet1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            app:srcCompat="@drawable/vit1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPet2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            app:srcCompat="@drawable/vit2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPet3"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            app:srcCompat="@drawable/vit3" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="21dp">
+
+        <TextView
+            android:id="@+id/tienVit1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.249"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/tienVit2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="1dp" />
+
+
+        <TextView
+            android:id="@+id/tienVit3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.899"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Nhập số tiền"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <Button
+        android:id="@+id/datcuoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt cược " />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bắt đầu " />
+
+</LinearLayout>
